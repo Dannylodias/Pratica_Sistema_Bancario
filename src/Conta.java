@@ -28,23 +28,21 @@ public class Conta {
         this.tipo = tipo;
     }
 
-    public void somaSaldo(double Deposito){
+    public void somaSaldo(double Deposito) {
         this.saldo += Deposito;
     }
 
-    public void sacarSaldo(double Saque){
+    public void sacarSaldo(double Saque) {
         this.saldo -= Saque;
     }
 
-    public void infoDados(){
+    public void infoDados() {
         System.out.println("----------------------------- Dados Conta -----------------------------");
         System.out.println("Num Conta: " + this.getNum_conta());
         System.out.println("Saldo: " + this.getSaldo());
         System.out.println("Tipo: " + this.getTipo());
-        System.out.println("-----------------------------------------------------------------------");
 
     }
-
 
 
 }

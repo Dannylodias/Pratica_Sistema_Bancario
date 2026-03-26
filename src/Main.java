@@ -2,7 +2,7 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        Conta conta1 = new Conta();
+        ContaCorrente contaCorrente = new ContaCorrente();
         Pessoa pessoa1 = new Pessoa();
 
         //Pessoa
@@ -11,14 +11,15 @@ public class Main {
         pessoa1.setIdade(22);
 
         //Conta
-        conta1.setSaldo(6000);
-        conta1.setNum_conta(235);
-        conta1.setTipo("Corrente");
-
+        contaCorrente.setSaldo(2000);
+        contaCorrente.setTipo("Conta Corrente");
+        contaCorrente.setNum_conta(99);
         //Invocando Metodos
         pessoa1.infoDados();
-        conta1.infoDados();
-        conta1.sacarSaldo(3000);
-        conta1.infoDados();
+        contaCorrente.infoDados();
+
+        contaCorrente.transacao(1000);
+        contaCorrente.setSaldo(2000);
+
     }
 }

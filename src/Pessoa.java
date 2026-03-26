@@ -7,6 +7,7 @@ public class Pessoa {
     public String getNome() {
         return nome;
     }
+
     public void setNome(String nome) {
         this.nome = nome;
     }
@@ -27,8 +28,8 @@ public class Pessoa {
         this.idade = idade;
     }
 
-    public void infoDados(){
-    System.out.println("----------------------------- Dados Pessoa -----------------------------");
+    public void infoDados() {
+        System.out.println("----------------------------- Dados Pessoa -----------------------------");
         System.out.println("Nome: " + this.getNome());
         System.out.println("CPF: " + this.getCpf());
         System.out.println("Idade: " + this.getIdade());
