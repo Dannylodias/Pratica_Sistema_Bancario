@@ -36,15 +36,13 @@ public class Conta {
         this.saldo -= Saque;
     }
 
-    public void infoDados() {
+    public void infoDados() {//to.string
         System.out.println("----------------------------- Dados Conta -----------------------------");
         System.out.println("Num Conta: " + this.getNum_conta());
         System.out.println("Saldo: " + this.getSaldo());
         System.out.println("Tipo: " + this.getTipo());
 
     }
-
-
 }
 
 

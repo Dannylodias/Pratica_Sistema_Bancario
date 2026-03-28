@@ -6,4 +6,16 @@ public class ContaSalario extends Conta {
         System.out.println("Saldo atual: " + getSaldo());
 
     }
+    public void deposito(double deposito) {
+        setSaldo(getSaldo() + deposito);
+        System.out.println("--------------Deposito Realizado----------------");
+        System.out.println("Saldo atual: "+getSaldo());
+    }
+
+    @Override
+    public void infoDados() {
+        super.infoDados();
+        System.out.println("\nOBSERVAÇÃO: Está conta possui LIMITAÇÕES");
+        System.out.println("Consulte condições");
+    }
 }
